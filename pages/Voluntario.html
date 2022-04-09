@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Más compañeros menos callejeros</title>
+        <link rel="shortcut icon" href="../imagenes/icon.png">
+        <!-- Font awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+<body>
+
+<!-- Header -->
+    <header class="header_container">
+        <img id="logo" src="../imagenes/imagen5.png" alt="Logo">
+        <h2 class="header_title">Más compañeros, menos callejeros</h2>
+        <ul class="header_list">
+            <li><a href="../Index.html">Nosotros</a></li>
+            <li><a href="Historia.html">Nuestra historia</a></li>
+            <li><a href="Impacto.html">Nuestro impacto</a></li>
+            <li><a href="Dona.html">Dona</a></li>
+            <li class="li_selected-color"><a href="Voluntario.html">Se voluntario</a></li>
+        </ul>
+    </header>
+
+<!-- Main -->
+        <main class="main_container" id="mainBackground_voluntario">
+        <h4 class="main_subtitle">Contactanos para ser voluntario</h4>
+        <form class="main_form"action="destino" method="get" enctype="" id="voluntario">
+            <fieldset>
+                <legend class="main_legend">Llená el formulario y nos pondremos en contacto</legend>
+                <label class="main_label" for="Nombre y Apellido">Nombre y Apellido</label>
+                <input class="main_input" type="text" name="userName" id="Nombre" placeholder="Nombre y Apellido" required>
+                <label class="main_label" for="Fecha de nacimiento">Fecha de nacimiento</label>
+                <input class="main_input" type="date" name="userBirth" id="FechaNacimiento" placeholder="aaaa/mm/dd" required>
+                <label class="main_label" for="Email">Email</label>
+                <input class="main_input" type="email" name="userEmail" id="Email" placeholder="ejemplo@gmail.com" required>
+                <label class="main_label" for="Número de telefono">Número de telefono</label>
+                <input class="main_input" type="number" name="userPhone" id="Telefono" placeholder="3510000000" required>
+                <label class="main_label" for="Provincia">Provincia</label>
+                <input class="main_input" type="Text" name="userState" id="Provincia" placeholder="Buenos Aires">
+                <label class="main_label" for="Localidad">Localidad</label>
+                <input class="main_input" type="Text" name="userCity" id="Localidad" placeholder="CABA">
+                <select class="main_select" name="sede">
+                    <option value="" hidden selected>Elije una sede</option>
+                    <option value="Caballito">Caballito</option>
+                    <option value="Chacarita">Chacarita</option>
+                    <option value="Palermo">Palermo</option>
+                </select>
+                <label class="main_label" for="Justificacion">¿Por qué estás inderesado/a de formar parte de nuestra organización?</label>
+                <textarea class="main_textarea" name="Justificacion" placeholder="Estoy interesado en formar parte de esta organización porque..." rows="10"></textarea>
+                <button type="submit">Enviar</button> 
+            </fieldset>
+        </form>
+    </main>
+<!-- Footer  -->
+   <footer class="footer_container">
+    <em class="footer_name">Más compañeros, menos callejeros</em>
+     <i class="fa-solid fa-envelope"></i>
+    <a href="mailto:mcmc@gmail.com">Mail</a>
+    <i class="fa-brands fa-facebook-square"></i>
+    <a href="https://www.facebook.com">F</a>
+    <i class="fa-brands fa-instagram"></i>
+    <a href="https://www.instagram.com">Ig</a>
+    </footer>
+</body>
+</html>
