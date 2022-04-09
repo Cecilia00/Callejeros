@@ -113,38 +113,73 @@
     }
 
     /* Main Dona */
-    main.main_container h5.main_text {
+    main.main_containerDona h4.main_subtitle {
+        background-color: #ddeedf;
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    main.main_containerDona {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas:
+        "AreaDona"
+        "AreaDona1"
+        "AreaDona2"
+        "AreaDona3"
+        "AreaDona4"
+        "AreaDona5";
+        row-gap: 10px;
+        justify-items: center;
+        column-gap: 10px;
+
+    }
+    #Dona{
+        grid-area: AreaDona;
+    }
+    #Dona1{
+        grid-area: AreaDona1;
+    }
+
+    #Dona2{
+        grid-area: AreaDona2;
+    } 
+
+    #Dona3{
+        grid-area: AreaDona3;
+    }     
+    
+    #Dona4{
+        grid-area: AreaDona4;
+    }  
+    
+    #Dona5{
+        grid-area: AreaDona5;
+    }  
+   
+    main.main_containerDona img.main_imagesDona{
+        width: 80%;
+    }
+    main.main_containerDona h5.main_text {
         margin-bottom: 10px;
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     
-    main.main_container ul.main_listDona {
-        width: 35%;
+    main.main_containerDona ul.main_listDona li {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        display: inline-block;
-        padding: 20px;
-        margin: 2%;
         text-align: center;
+        font-size: 0.8rem;
     }
     
-    main.main_container img.main_imagesDona{
-        display: inline-block;
-        width: 20%;
-    }
-    
-    main.main_container img.main_imagesDonaQR{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 15%;
-        margin-bottom: 3%;
+
+
+    main.main_containerDona img.main_imagesDonaQR{
+        width: 80%;
     
     }
     
-    main.main_container div.main_imagesContainerDona {
-        margin: 0% 0% 5% 18%;
-    }
     /* Main impacto */
 
     main.main_containerImpacto{
@@ -328,24 +363,65 @@
         box-shadow: 2.5px 3px #c2c1c1;
     }
 
- /* Main Historia*/
-    main.main_container p.main_paragraphHistoria{
-        margin: auto;
-        text-align: center;
-        width: 70%;
+/* Main Historia*/
+    main.main_containerHistoria h4.main_subtitle {
+        background-color: #ddeedf;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    } 
-
-    main.main_container img.main_imagesHistoria{
-        margin-left: 8%;
-        width: 23%;
     }
+    main.main_containerHistoria {
+        display: grid;
+        grid-template-columns: repeat(4,22%);
+        grid-template-areas:
+        "AreaHistoria1 AreaHistoria1 AreaHistoria1 AreaHistoria1"
+        "AreaHistoria2 AreaHistoria2 AreaHistoria3 AreaHistoria4"
+        "AreaHistoria6 AreaHistoria7 AreaHistoria5 AreaHistoria5";
+        row-gap: 20px;
+        justify-content: center;
+        column-gap: 10px;
+        margin-bottom: 20px;
 
-    main.main_container div.main_imagesContainer {
-        margin: 0% 0% 3% 27%;
-    }
+        }
+        #Historia1{
+            grid-area: AreaHistoria1;
+            place-self: center;
+        }
+        #Historia2{
+            grid-area: AreaHistoria2;
+            place-self: center;
+        }
+        #Historia3{
+            grid-area: AreaHistoria3;
+            place-self: center;
+        }
+        #Historia4{
+            grid-area: AreaHistoria4;
+            place-self: center;
+        }
+        #Historia5{
+            grid-area: AreaHistoria5;
+            place-self: center;
+        }
+        #Historia6{
+            grid-area: AreaHistoria6;
+            place-self: center;
+        }
+        #Historia7{
+            grid-area: AreaHistoria7;
+            place-self: center;
+        }
 
- /* Main impacto */
+
+        main.main_containerHistoria img.main_imagesHistoria{
+            width: 100%;
+        } 
+        main.main_containerHistoria p.main_paragraphHistoria{
+            text-align: center;
+            font-size: 0.85rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        } 
+
+
+    /* Main impacto */
 
     main.main_containerImpacto{
         background-image: url(../imagenes/imagen9.jpg) ;
@@ -411,37 +487,75 @@
             } 
 
     /* Main Dona */
-    main.main_container h5.main_text {
+    main.main_containerDona h4.main_subtitle {
+        background-color: #ddeedf;
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    main.main_containerDona {
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        grid-template-areas:
+        "AreaDona AreaDona AreaDona"
+        "AreaDona1 AreaDona2 AreaDona3"
+        ". AreaDona4 ."
+        ". AreaDona5 .";
+        row-gap: 20px;
+        justify-items: center;
+        column-gap: 10px;
+        margin-bottom: 20px;
+
+    }
+    #Dona{
+        grid-area: AreaDona;
+    }
+    #Dona1{
+        grid-area: AreaDona1;
+        place-self: center;
+    }
+
+    #Dona2{
+        grid-area: AreaDona2;
+        place-self: center;
+    } 
+
+    #Dona3{
+        grid-area: AreaDona3;
+        place-self: center;
+    }     
+    
+    #Dona4{
+        grid-area: AreaDona4;
+        place-self: center;
+    }  
+    
+    #Dona5{
+        grid-area: AreaDona5;
+        place-self: center;
+    }  
+   
+    main.main_containerDona img.main_imagesDona{
+        width: 80%;
+    }
+    main.main_containerDona h5.main_text {
         margin-bottom: 10px;
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-
-    main.main_container ul.main_listDona {
-        width: 35%;
+    
+    main.main_containerDona ul.main_listDona li {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        display: inline-block;
-        padding: 20px;
-        margin: 2%;
         text-align: center;
+        font-size: 0.8rem;
     }
+    
 
-    main.main_container img.main_imagesDona{
-        display: inline-block;
-        width: 20%;
-    }
 
-    main.main_container img.main_imagesDonaQR{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 15%;
-        margin-bottom: 3%;
-
-    }
-
-    main.main_container div.main_imagesContainerDona {
-        margin: 0% 0% 5% 18%;
+    main.main_containerDona img.main_imagesDonaQR{
+        width: 80%;
+    
     }
 
     /* Main Voluntatrio */
