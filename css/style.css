@@ -612,6 +612,7 @@
         width: 80%;
         animation-name: zoom-shake;
         animation-duration: 3s;
+        animation-delay: 1s;
     }
     main.main_containerDona div.div_mainImpacto h5.main_text {
         margin-bottom: 10px;
