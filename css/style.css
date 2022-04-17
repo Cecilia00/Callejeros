@@ -370,7 +370,7 @@
         display: flex;
         width: 18%;
         overflow: auto;
-        padding: 20px;
+        padding: 10px;
         border-radius: 25px;
         border-color: #466c95;
         background-color: #E6F4F1;
@@ -609,10 +609,12 @@
     }  
    
     main.main_containerDona div.div_mainImpacto img.main_imagesDona{
-        width: 80%;
+        height: 320px;
+        box-shadow: 2.5px 3px #dbd9d9;
         animation-name: zoom-shake;
-        animation-duration: 3s;
-        animation-delay: 1s;
+        animation-duration: 0.4s;
+        animation-delay: 0.3s;
+        animation-iteration-count: 4;
     }
     main.main_containerDona div.div_mainImpacto h5.main_text {
         margin-bottom: 10px;
@@ -629,7 +631,7 @@
 
 
     main.main_containerDona div.div_mainImpacto img.main_imagesDonaQR{
-        width: 80%;
+        width: 75%;
     
     }
 
