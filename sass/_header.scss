@@ -1,0 +1,49 @@
+/* Estilos del header */
+header{
+    background-color: $color-1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .logo{
+        width: 25%;
+        align-self: center;
+    }
+    .header_h1{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: white;
+        width: 75% ;
+        font-size: 1.5rem;
+        padding-left: 10%;
+        padding-right: 5%;
+        align-self: center;
+    }
+    .burgerBtn{
+        display: none;
+    }
+    .headerNav{
+        width: 100%;
+        .li-color1{
+            background-color:$color-3;
+        }
+        .li-color2{
+            background-color:$color-4;
+        }
+        
+    }
+
+}
+@media only screen and (min-width:401px){
+
+    /* Estilos del header */
+    header{
+        
+        .logo{
+            width: 7%;
+        }
+        .header_h1{
+            font-size: 2rem;
+        }
+
+    }
+}

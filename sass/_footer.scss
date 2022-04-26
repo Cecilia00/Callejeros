@@ -1,0 +1,35 @@
+/* Estilos del footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-1;
+    align-items:center;
+    padding: 2%;
+
+    .footer_h5{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: white;
+        font-size: 0.8rem;
+        margin:0px;
+    }
+
+    i{
+        color: white;
+
+    }
+}
+
+@media only screen and (min-width:401px){
+
+
+
+    /* Estilos del footer */
+
+    footer{
+        padding: 0.5%;
+        .footer_h5{
+            font-size: 1rem;
+        }
+    }
+}

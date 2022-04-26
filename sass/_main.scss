@@ -1,0 +1,135 @@
+/* Estilos del main general: aplican a todas las hojas*/
+main{
+    .main_h2{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: white;
+        background-color: rgba(106, 105, 104, 0.273);
+        font-size: 1.2rem;
+        padding: 3%;
+        text-align: center;
+
+    }
+    .main_h3{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: white;
+        background-color: rgba(106, 105, 104, 0.273);
+        font-size: 1rem;
+        padding: 3%;
+        text-align: center;
+
+    }
+
+    .main_p{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: white;
+        background-color: rgba(106, 105, 104, 0.273);
+        font-size: 0.8rem;
+        padding: 3%;
+        text-align: center;
+
+    }
+
+    .main_ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-items: center;
+        padding:0px 0px 3% 0px;
+
+        .main_li{ 
+            display: flex;
+            flex-wrap: wrap;
+            width:100%;
+            height: 150px;
+            align-content:center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            color: black;
+            background-color: rgba(255, 255, 255, 0.819);
+            font-size: 0.8rem;
+            margin: 5%;
+            justify-content: center;
+            text-align: center;
+            border-radius: 15px;
+
+        
+            .main_h4{
+                display:block;
+                text-align:center;
+                width: 100%;
+                font-size: 0.9rem;
+            }
+
+        }
+    }
+}
+
+/* Estilos del main de la hoja Index */
+.main_home{
+    
+    background-image: url(../imagenes/imagen11.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    }
+/* Estilos del main de la hoja Impacto */
+
+.main_impacto{
+    background-color: $color-2;
+    .main_liImpacto{
+        box-shadow: 2.5px 3px #a0a0a0;
+    }
+
+}
+
+@media only screen and (min-width:401px){
+
+
+    /* Estilos del main general: aplican a todas las hojas*/
+     main{
+         .main_h2{
+             font-size: 1.6rem;
+             &:hover{
+                 background-color:rgba(0, 0, 0, 0.273) ;
+             }
+ 
+         }
+         .main_h3{
+             font-size: 1.4rem;
+             &:hover{
+                 background-color:rgba(0, 0, 0, 0.273) ;
+             }
+         }
+         .main_h4{
+             font-size: 1.2rem;
+ 
+         }
+         .main_p{
+             font-size: 1rem;
+             &:hover{
+                 font-size: 1.2rem;
+                 background-color:rgba(0, 0, 0, 0.273) ;
+             }
+         }
+         .main_ul{
+             
+             .main_li{ 
+                 font-size: 1rem;
+                 width: 40%;
+ 
+                 &:hover{
+                     background-color: white;
+                     transform: scale(1.2);
+                 }
+ 
+                 .main_h4{
+                     font-size: 1.2rem;
+                 }
+ 
+             }
+         }
+     }
+      /* Estilos del main de la hoja Index */
+     .main_home{
+         background-size: 100%;
+         background-repeat: repeat-y;
+     }
+    }

@@ -29,6 +29,13 @@ header {
     header .headerNav .li-color2 {
       background-color: #FCA311; }
 
+@media only screen and (min-width: 401px) {
+  /* Estilos del header para desktop*/
+  header .logo {
+    width: 7%; }
+  header .header_h1 {
+    font-size: 2rem; } }
+
 /* Estilos del main general: aplican a todas las hojas*/
 main .main_h2 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -92,28 +99,8 @@ main .main_ul {
   .main_impacto .main_liImpacto {
     box-shadow: 2.5px 3px #a0a0a0; }
 
-/* Estilos del footer */
-footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: #22223B;
-  align-items: center;
-  padding: 2%; }
-  footer .footer_h5 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    font-size: 0.8rem;
-    margin: 0px; }
-  footer i {
-    color: white; }
-
 @media only screen and (min-width: 401px) {
-  /* Estilos del header */
-  header .logo {
-    width: 7%; }
-  header .header_h1 {
-    font-size: 2rem; }
-  /* Estilos del main general: aplican a todas las hojas*/
+  /* Estilos del main general paea desktop: aplican a todas las hojas*/
   main .main_h2 {
     font-size: 1.6rem; }
     main .main_h2:hover {
@@ -140,8 +127,25 @@ footer {
   /* Estilos del main de la hoja Index */
   .main_home {
     background-size: 100%;
-    background-repeat: repeat-y; }
-  /* Estilos del footer */
+    background-repeat: repeat-y; } }
+
+/* Estilos del footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #22223B;
+  align-items: center;
+  padding: 2%; }
+  footer .footer_h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    font-size: 0.8rem;
+    margin: 0px; }
+  footer i {
+    color: white; }
+
+@media only screen and (min-width: 401px) {
+  /* Estilos del footer para desktop */
   footer {
     padding: 0.5%; }
     footer .footer_h5 {
