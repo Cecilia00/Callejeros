@@ -263,6 +263,13 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     /* Main Voluntatrio */
+
+    main.main_container h2.h2_Voluntario{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 0.8rem;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
     #mainBackground_voluntario {
         background-image: url(../imagenes/imagen6.jpg);
     }

@@ -1,0 +1,12 @@
+$redes: (
+    mail: white,
+    facebook: blue,
+    instagram: purple,
+);
+
+@each $red, $color in $redes {
+    .btn_#{$red} {
+        color: $color;
+
+    }
+}
