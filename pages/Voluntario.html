@@ -15,62 +15,63 @@
     </head>
     <body>
 
-<!-- Header -->
-    <header class="container-fluid bg-white">
-        <div class="row">
-            <div class="col-1">
-                <img class="float-left img-responsive" id="logo" src="../imagenes/imagen5.png" alt="Logo">
+        <!-- Header -->
+        <header class="container-fluid bg-white">
+            <div class="row">
+                <div class="col-1">
+                    <img class="float-left img-responsive" id="logo" src="../imagenes/imagen5.png" alt="Logo">
+                </div>
+                <div class="col-4">
+                    <h1 class="text-center h2">Más compañeros, menos callejeros</h1>
+                </div>  
+                <div class="col-7">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                        <div class="container-fluid d-flex justify-content-around">
+                            <ul class="list-group list-group-horizontal-sm">
+                                <li class="list-group-item"><a href="../index.html" class="link-dark text-decoration-none">Nosotros</a></li>
+                                <li class="list-group-item"><a href="historia.html" class="link-dark text-decoration-none">Nuestra historia</a></li>
+                                <li class="list-group-item"><a href="impacto.html"class="link-dark text-decoration-none">Nuestro impacto</a></li>
+                                <li class="list-group-item bg-danger"><a href="dona.html" class="link-dark text-decoration-none">Dona</a></li>
+                                <li class="list-group-item bg-warning"><a href="voluntario.html" class="link-dark text-decoration-none">Se voluntario</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
-            <div class="col-4">
-                <h1 class="text-center h2">Más compañeros, menos callejeros</h1>
-            </div>  
-            <div class="col-7">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                    <div class="container-fluid d-flex justify-content-around">
-                        <ul class="list-group list-group-horizontal-sm">
-                            <li class="list-group-item"><a href="../index.html" class="link-dark text-decoration-none">Nosotros</a></li>
-                            <li class="list-group-item"><a href="historia.html" class="link-dark text-decoration-none">Nuestra historia</a></li>
-                            <li class="list-group-item"><a href="impacto.html"class="link-dark text-decoration-none">Nuestro impacto</a></li>
-                            <li class="list-group-item bg-danger"><a href="dona.html" class="link-dark text-decoration-none">Dona</a></li>
-                            <li class="list-group-item bg-warning"><a href="voluntario.html" class="link-dark text-decoration-none">Se voluntario</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-<!-- Main -->
+        </header>
+
+        <!-- Main -->
         <main class="d-flex flex-column align-items-center " id="mainBackground_voluntario">
-        <h2 class="h2_Voluntario">Ayudanos a salvar animales</h2>
-        <h4 class="container-fluid h4 text-center mark">Contactanos para ser voluntario</h4>
-        <form action="destino" method="get" enctype="" id="voluntario">
-            <div class="form-group d-flex flex-column align-items-center ">
-                <legend class="lead mark text-center">Llená el formulario y nos pondremos en contacto</legend>
-                <label class="main_label mark" for="Nombre y Apellido">Nombre y Apellido</label>
-                <input class="form-control" type="text" name="userName" id="Nombre" placeholder="Nombre y Apellido" required>
-                <label class="main_label mark" for="Fecha de nacimiento">Fecha de nacimiento</label>
-                <input class="form-control" type="date" name="userBirth" id="FechaNacimiento" placeholder="aaaa/mm/dd" required>
-                <label class="main_label mark" for="Email">Email</label>
-                <input class="form-control" type="email" name="userEmail" id="Email" placeholder="ejemplo@gmail.com" required>
-                <label class="main_label mark" for="Número de telefono">Número de telefono</label>
-                <input class="form-control" type="number" name="userPhone" id="Telefono" placeholder="3510000000" required>
-                <label class="main_label mark" for="Provincia">Provincia</label>
-                <input class="form-control" type="Text" name="userState" id="Provincia" placeholder="Buenos Aires">
-                <label class="main_label mark" for="Localidad">Localidad</label>
-                <input class="form-control" type="Text" name="userCity" id="Localidad" placeholder="CABA">
-                <select class="form-control" name="sede">
-                    <option value="" hidden selected>Elije una sede</option>
-                    <option value="Caballito">Caballito</option>
-                    <option value="Chacarita">Chacarita</option>
-                    <option value="Palermo">Palermo</option>
-                </select>
-                <label class="main_label mark" for="Justificacion">¿Por qué estás inderesado/a de formar parte de nuestra organización?</label>
-                <textarea class="form-control" name="Justificacion" placeholder="Estoy interesado en formar parte de esta organización porque..." rows="10"></textarea>
-                <button type="submit">Enviar</button> 
-            </div>
-        </form>
-    </main>
-<!-- Footer  -->
+            <h2 class="h2_Voluntario">Ayudanos a salvar animales</h2>
+            <h4 class="container-fluid h4 text-center mark">Contactanos para ser voluntario</h4>
+            <form action="destino" method="get" enctype="" id="voluntario">
+                <div class="form-group d-flex flex-column align-items-center ">
+                    <legend class="lead mark text-center">Llená el formulario y nos pondremos en contacto</legend>
+                    <label class="main_label mark" for="Nombre y Apellido">Nombre y Apellido</label>
+                    <input class="form-control" type="text" name="userName" id="Nombre" placeholder="Nombre y Apellido" required>
+                    <label class="main_label mark" for="Fecha de nacimiento">Fecha de nacimiento</label>
+                    <input class="form-control" type="date" name="userBirth" id="FechaNacimiento" placeholder="aaaa/mm/dd" required>
+                    <label class="main_label mark" for="Email">Email</label>
+                    <input class="form-control" type="email" name="userEmail" id="Email" placeholder="ejemplo@gmail.com" required>
+                    <label class="main_label mark" for="Número de telefono">Número de telefono</label>
+                    <input class="form-control" type="number" name="userPhone" id="Telefono" placeholder="3510000000" required>
+                    <label class="main_label mark" for="Provincia">Provincia</label>
+                    <input class="form-control" type="Text" name="userState" id="Provincia" placeholder="Buenos Aires">
+                    <label class="main_label mark" for="Localidad">Localidad</label>
+                    <input class="form-control" type="Text" name="userCity" id="Localidad" placeholder="CABA">
+                    <select class="form-control" name="sede">
+                        <option value="" hidden selected>Elije una sede</option>
+                        <option value="Caballito">Caballito</option>
+                        <option value="Chacarita">Chacarita</option>
+                        <option value="Palermo">Palermo</option>
+                    </select>
+                    <label class="main_label mark" for="Justificacion">¿Por qué estás inderesado/a de formar parte de nuestra organización?</label>
+                    <textarea class="form-control" name="Justificacion" placeholder="Estoy interesado en formar parte de esta organización porque..." rows="10"></textarea>
+                    <button type="submit">Enviar</button> 
+                </div>
+            </form>
+        </main>
+        <!-- Footer  -->
         <footer class="d-flex fixed-bottom justify-content-around bg-white">
             <h6 class="d-inline" >Más compañeros, menos callejeros</h5>
             <a href="mailto:mcmc@gmail.com"> <i class="fa-solid fa-envelope"></i></a>

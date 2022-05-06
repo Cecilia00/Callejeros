@@ -11,61 +11,78 @@
         <!-- Bootstrap CDN Stylesheet -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/newStyle.css">
     </head>
-<body>
+    <body>
 
-<!-- Header -->
-    <header class="container-fluid bg-white">
-        <div class="row">
-            <div class="col-1">
-                <img class="float-left img-responsive" id="logo" src="../imagenes/imagen5.png" alt="Logo">
-            </div>
-            <div class="col-4">
-                <h1 class="text-center h2">Más compañeros, menos callejeros</h1>
-            </div>  
-            <div class="col-7">
+        <!-- Header -->
+        <header>
+            <img class="logo" src="../imagenes/imagen5.png" alt="Logo, caricatura de perro con lentes">
+            <h1 class="header_h1">Más compañeros, menos callejeros</h1>
+            <button class="burgerBtn"><i class="fa-solid fa-bars"></i>"></i></button>
+            <div class="headerNav">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
                     <div class="container-fluid d-flex justify-content-around">
                         <ul class="list-group list-group-horizontal-sm">
                             <li class="list-group-item"><a href="../index.html" class="link-dark text-decoration-none">Nosotros</a></li>
                             <li class="list-group-item"><a href="historia.html" class="link-dark text-decoration-none">Nuestra historia</a></li>
                             <li class="list-group-item"><a href="impacto.html"class="link-dark text-decoration-none">Nuestro impacto</a></li>
-                            <li class="list-group-item bg-danger"><a href="dona.html" class="link-dark text-decoration-none">Dona</a></li>
-                            <li class="list-group-item bg-warning"><a href="voluntario.html" class="link-dark text-decoration-none">Se voluntario</a></li>
+                            <li class="list-group-item li-color1"><a href="dona.html" class="link-dark text-decoration-none">Dona</a></li>
+                            <li class="list-group-item li-color2"><a href="voluntario.html" class="link-dark text-decoration-none">Se voluntario</a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
-        </div>
-    </header>
+        </header>
 
-<!-- Main -->
-    <main class="main_containerHistoria">
-        <h4 id="Historia1" class="main_subtitle">Nuestra historia</h4>
-        <div class="div_mainHistoria">
-            <p id="Historia2" class="main_paragraphHistoria">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget malesuada orci. Integer vel diam diam. Integer lobortis at orci non mattis. Etiam nisl ex, mattis et libero sit amet, dignissim maximus nisi. Mauris ac nisi nulla. In hac habitasse platea dictumst. Donec eget semper lorem. Vivamus sed mollis justo. Nulla facilisi. Suspendisse bibendum diam nec tellus condimentum, a bibendum magna viverra. Sed varius massa quam, eleifend sagittis nisi volutpat et. Vestibulum tincidunt ac lacus et placerat.
+        <!-- Main -->
+        <main class="main_containerHistoria">
+            <h4 id="Historia1" class="main_subtitle">Nuestra historia</h4>
+            <div id="CarouselHistoria" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"></div>
+                        <img id="Historia3" class="d-block w-100" src="../imagenes/imagen4.jpg" alt="Perro rescatado por bomberos">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="Historia4" class="d-block w-100"  src="../imagenes/imagen13.jpg" alt="Perro con sarna siendo revisado por un veterinario">  
+                    </div>
+                    <div class="carousel-item">
+                        <img id="Historia6" class="d-block w-100"  src="../imagenes/imagen12.jpg" alt="Perro negro con manchas blancas con un pañuelo que dice adoptame">
+                    </div> 
+                    <div class="carousel-item ">
+                        <img id="Historia7" class="d-block w-100"  src="../imagenes/imagen9.jpg" alt="Cachorro marrón con una cinta celeste en la oreja">
+                    </div>
+                </div>
 
-                Pellentesque sit amet nunc eros. Nam tincidunt orci eu ligula porttitor sagittis. Praesent erat metus, pellentesque nec sagittis eget, pellentesque id nisi. Morbi sollicitudin eget orci quis sagittis. Aenean rhoncus aliquam rutrum. Maecenas vel ipsum turpis. Aenean elit elit, pharetra sit amet mollis quis, tincidunt in erat. Vivamus ex tortor, varius vitae lacinia nec, facilisis sagittis est. Quisque vitae nisl sit amet sem sollicitudin elementum. Curabitur rutrum mi sagittis leo varius, eu dictum sapien facilisis. Sed erat libero, blandit sit amet dapibus nec, mollis ac enim. Suspendisse potenti. Vestibulum id odio elementum, vestibulum dolor a, aliquet sem.
+                <a class="carousel-control-prev" href="#CarouselHistoria" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#CarouselHistoria" role="button" data-slide="next"></a>
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
                 
-                Integer rutrum lobortis sapien, nec feugiat dolor interdum sed. Mauris auctor ex sagittis vulputate dapibus. Donec sit amet leo a enim ornare mattis vitae ut diam. Nam hendrerit facilisis tincidunt. Suspendisse eget convallis tortor. Praesent eleifend molestie leo ac vulputate. Fusce cursus ultrices felis, vel rhoncus ante vestibulum vitae.</p>
-            <img id="Historia3" class="main_imagesHistoria" src="../imagenes/imagen1.jpg" alt="Perro bebé alimentado a mamadera">
-            <img id="Historia4" class="main_imagesHistoria"  src="../imagenes/imagen2.png" alt="Perro bebé alimentado a mamadera">
-            <p id="Historia5" class="main_paragraphHistoria">Mauris dapibus blandit urna, at cursus arcu pharetra at. Etiam condimentum elementum turpis in pretium. Sed tortor sem, commodo malesuada euismod volutpat, dignissim non libero. Nulla dignissim, mi sit amet tempus eleifend, diam sem faucibus quam, quis imperdiet ex tellus eu sem. Integer sed turpis et dui commodo imperdiet vel nec felis. Maecenas aliquet tortor eu rutrum gravida. Maecenas luctus congue dictum. Sed mi dui, fermentum at dolor vel, tristique mattis ante. Nullam tristique nibh vitae accumsan pretium. Donec quis odio ut massa suscipit gravida. Aenean eget commodo libero. Nulla egestas sapien quis magna varius, nec hendrerit ipsum hendrerit. Cras quis enim in diam tempor euismod.
-                
-                Sed pharetra purus sapien, id molestie felis finibus vitae. Ut tempor in odio a semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse semper id ex et faucibus. Donec ultricies accumsan vehicula. Etiam quis metus non lorem facilisis posuere quis ac ex. Curabitur facilisis condimentum mauris, a feugiat risus. Donec malesuada velit vel orci porttitor aliquam.</p>
-            <img id="Historia6" class="main_imagesHistoria"  src="../imagenes/imagen3.jpg" alt="Rescate por bomberos 1">
-            <img id="Historia7" class="main_imagesHistoria"  src="../imagenes/imagen4.jpg" alt="Rescate por bomberos 2">
-        </div>
-    </main>
+                <p id="Historia2" class="main_paragraphHistoria">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget malesuada orci. Integer vel diam diam. Integer lobortis at orci non mattis. Etiam nisl ex, mattis et libero sit amet, dignissim maximus nisi. Mauris ac nisi nulla. In hac habitasse platea dictumst. Donec eget semper lorem. Vivamus sed mollis justo. Nulla facilisi. Suspendisse bibendum diam nec tellus condimentum, a bibendum magna viverra. Sed varius massa quam, eleifend sagittis nisi volutpat et. Vestibulum tincidunt ac lacus et placerat.
+
+                    Pellentesque sit amet nunc eros. Nam tincidunt orci eu ligula porttitor sagittis. Praesent erat metus, pellentesque nec sagittis eget, pellentesque id nisi. Morbi sollicitudin eget orci quis sagittis. Aenean rhoncus aliquam rutrum. Maecenas vel ipsum turpis. Aenean elit elit, pharetra sit amet mollis quis, tincidunt in erat. Vivamus ex tortor, varius vitae lacinia nec, facilisis sagittis est. Quisque vitae nisl sit amet sem sollicitudin elementum. Curabitur rutrum mi sagittis leo varius, eu dictum sapien facilisis. Sed erat libero, blandit sit amet dapibus nec, mollis ac enim. Suspendisse potenti. Vestibulum id odio elementum, vestibulum dolor a, aliquet sem.
+                    
+                    Integer rutrum lobortis sapien, nec feugiat dolor interdum sed. Mauris auctor ex sagittis vulputate dapibus. Donec sit amet leo a enim ornare mattis vitae ut diam. Nam hendrerit facilisis tincidunt. Suspendisse eget convallis tortor. Praesent eleifend molestie leo ac vulputate. Fusce cursus ultrices felis, vel rhoncus ante vestibulum vitae.</p>
+                <p id="Historia5" class="main_paragraphHistoria">Mauris dapibus blandit urna, at cursus arcu pharetra at. Etiam condimentum elementum turpis in pretium. Sed tortor sem, commodo malesuada euismod volutpat, dignissim non libero. Nulla dignissim, mi sit amet tempus eleifend, diam sem faucibus quam, quis imperdiet ex tellus eu sem. Integer sed turpis et dui commodo imperdiet vel nec felis. Maecenas aliquet tortor eu rutrum gravida. Maecenas luctus congue dictum. Sed mi dui, fermentum at dolor vel, tristique mattis ante. Nullam tristique nibh vitae accumsan pretium. Donec quis odio ut massa suscipit gravida. Aenean eget commodo libero. Nulla egestas sapien quis magna varius, nec hendrerit ipsum hendrerit. Cras quis enim in diam tempor euismod.
+                    
+                    Sed pharetra purus sapien, id molestie felis finibus vitae. Ut tempor in odio a semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse semper id ex et faucibus. Donec ultricies accumsan vehicula. Etiam quis metus non lorem facilisis posuere quis ac ex. Curabitur facilisis condimentum mauris, a feugiat risus. Donec malesuada velit vel orci porttitor aliquam.</p>
+            
+        </main>
 
 
- <!-- Footer  -->
-    <footer class="d-flex fixed-bottom justify-content-around bg-white">
-        <h6 class="d-inline" >Más compañeros, menos callejeros</h5>
+     <!-- Footer  -->
+     <footer class="fixed-bottom">
+        <h5 class="footer_h5" >Más compañeros, menos callejeros</h5>
         <a href="mailto:mcmc@gmail.com"> <i class="fa-solid fa-envelope"></i></a>
         <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square"></i></a>
         <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
-    </footer>
-</body>
+     </footer>
+    </body>
 </html>

@@ -11,59 +11,56 @@
         <!-- Bootstrap CDN Stylesheet -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <!-- Stylesheet -->
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/newStyle.css">
+
     </head>
-<body>
+    <body>
 
-<!-- Header -->
-<header class="container-fluid bg-white">
-    <div class="row">
-        <div class="col-1">
-            <img class="float-left img-responsive" id="logo" src="../imagenes/imagen5.png" alt="Logo">
-        </div>
-        <div class="col-4">
-            <h1 class="text-center h2">Más compañeros, menos callejeros</h1>
-        </div>  
-        <div class="col-7">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                <div class="container-fluid d-flex justify-content-around">
-                    <ul class="list-group list-group-horizontal-sm">
-                        <li class="list-group-item"><a href="../index.html" class="link-dark text-decoration-none">Nosotros</a></li>
-                        <li class="list-group-item"><a href="historia.html" class="link-dark text-decoration-none">Nuestra historia</a></li>
-                        <li class="list-group-item"><a href="impacto.html"class="link-dark text-decoration-none">Nuestro impacto</a></li>
-                        <li class="list-group-item bg-danger"><a href="dona.html" class="link-dark text-decoration-none">Dona</a></li>
-                        <li class="list-group-item bg-warning"><a href="voluntario.html" class="link-dark text-decoration-none">Se voluntario</a></li>
-                    </ul>
+        <!-- Header -->
+        <header>
+            <img class="logo" src="../imagenes/imagen5.png" alt="Logo, caricatura de perro con lentes">
+            <h1 class="header_h1">Más compañeros, menos callejeros</h1>
+            <button class="burgerBtn"><i class="fa-solid fa-bars"></i>"></i></button>
+            <div class="headerNav">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <div class="container-fluid d-flex justify-content-around">
+                        <ul class="list-group list-group-horizontal-sm">
+                            <li class="list-group-item"><a href="../index.html" class="link-dark text-decoration-none">Nosotros</a></li>
+                            <li class="list-group-item"><a href="historia.html" class="link-dark text-decoration-none">Nuestra historia</a></li>
+                            <li class="list-group-item"><a href="impacto.html"class="link-dark text-decoration-none">Nuestro impacto</a></li>
+                            <li class="list-group-item li-color1"><a href="dona.html" class="link-dark text-decoration-none">Dona</a></li>
+                            <li class="list-group-item li-color2"><a href="voluntario.html" class="link-dark text-decoration-none">Se voluntario</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main class="main_Dona">
+            <h2 id="Dona" class="main_h2">Doná para que sigamos rescatando</h2>
+            <div class="div_mainDona">
+                <ul  class="main_ul" type="none">
+                    <li class="main_liDona">Banco XX</li>
+                    <li class="main_liDona">CBU: 0000000000000000000000</li>
+                    <li class="main_liDona"> Alias:MCMC.ONG</li>
+                    <li class="main_liDona">Titular de la cuenta:Nombre Apellido</li>
+                    <li class="main_liDona">DNI: 10000000</li>
+                </ul>
+                <div class="div_DonaQR">
+                    <img id="Dona1" class="main_imagesDona" src="../imagenes/imagen7.jpg" alt="Perro pidiendo donación 1">
+                    <h3 class="main_h3Dona" >Escaneá este código QR y dona ¡Hacenos posible ayudar!</h3>
+                    <img class="main_imagesDona" src="../imagenes/QR.png" alt="Código QR">
                 </div>
-            </nav>
-        </div>
-    </div>
-</header>
+            </div>
+        </main>
 
-    <!-- Main -->
-    <main class="main_containerDona">
-        <h4 id="Dona" class="main_subtitle">Dona</h4>
-        <div class="div_mainImpacto">
-            <img id="Dona1" class="main_imagesDona" src="../imagenes/imagen7.jpg" alt="Perro pidiendo donación 1">
-            <ul  id="Dona2" class="main_listDona" type="none">
-                <li>Banco XX</li>
-                <li></li>CBU: 0000000000000000000000</li>
-                <li> Alias:MCMC.ONG</li>
-                <li>Titular de la cuenta:Nombre Apellido</li>
-                <li>DNI: 10000000</li>
-            </ul>
-            <img  id="Dona3" class="main_imagesDona" src="../imagenes/imagen8.jpg" alt="Perro pidiendo donación 2">
-            <h5 id="Dona4" class="main_text" >Escaneá este código QR y dona ¡Hacenos posible ayudar!</h5>
-            <img id="Dona5" class="main_imagesDonaQR" src="../imagenes/QR.png" alt="Código QR">
-        </div>
-    </main>
-
- <!-- Footer  -->
-        <footer class="d-flex fixed-bottom justify-content-around bg-white">
-         <h6 class="d-inline" >Más compañeros, menos callejeros</h5>
-         <a href="mailto:mcmc@gmail.com"> <i class="fa-solid fa-envelope"></i></a>
-         <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square"></i></a>
-         <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+         <!-- Footer  -->
+         <footer class="fixed-bottom">
+            <h5 class="footer_h5" >Más compañeros, menos callejeros</h5>
+            <a href="mailto:mcmc@gmail.com"> <i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
         </footer>
-</body>
+    </body>
 </html>

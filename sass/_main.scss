@@ -64,19 +64,73 @@ main{
     background-position: center;
     }
 /* Estilos del main de la hoja Impacto */
-
-.main_impacto{
+.grid_impacto{
+    display: grid;
     background-color: $color-2;
+    grid-template-columns: 90%;
+    grid-template-rows: repeat(6, 200px);
+    grid-auto-flow: row;
+    border: 2px black;
     .main_liImpacto{
         box-shadow: 2.5px 3px #a0a0a0;
+        border: solid $color-1 2px;
+        place-self: stretch ;
+
+        .p_LiImpacto{
+        @include centerContent;
+        }
     }
 
+}
+/* Estilos del main de la hoja Dona */
+.main_Dona{
+    background-image: url(../imagenes/imagen8.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    .div_mainDona{
+       display: block;
+
+        
+        .main_liDona{
+            @include centerContent;
+            align-content: center;
+            flex-wrap: wrap;
+            width: 80%;
+            height: 30px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            color: black;
+            background-color: rgba(255, 255, 255, 0.428);
+            font-size: 0.8rem;
+            margin: 2%;
+            text-align: center;   
+        }
+
+        .div_DonaQR{
+            @include centerContent;
+            margin-bottom: 40px;
+            flex-wrap: nowrap;
+            .main_h3Dona{
+                text-align: center;
+                font-size: 1rem ;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+
+            }
+            .main_imagesDona{
+                @include centerContent;
+                width: 50%;
+            }
+        }
+    }
+}
+#Dona1{
+    display: none;
 }
 
 @media only screen and (min-width:401px){
 
 
-    /* Estilos del main general: aplican a todas las hojas*/
+    /* Estilos del main general Desktop: aplican a todas las hojas DESKTOP*/
      main{
          .main_h2{
              font-size: 1.6rem;
@@ -98,7 +152,6 @@ main{
          .main_p{
              font-size: 1rem;
              &:hover{
-                 font-size: 1.2rem;
                  background-color:rgba(0, 0, 0, 0.273) ;
              }
          }
@@ -110,19 +163,38 @@ main{
  
                  &:hover{
                      background-color: white;
-                     transform: scale(1.2);
+                     transform: scale(1.05);
                  }
  
                  .main_h4{
                      font-size: 1.2rem;
                  }
  
-             }
+            }
          }
      }
-      /* Estilos del main de la hoja Index */
-     .main_home{
+    /* Estilos del main de la hoja Index DESKTOP */
+    .main_home{
          background-size: 100%;
          background-repeat: repeat-y;
      }
+    
+
+    /* Estilos del main de la hoja Dona DESKTOP */
+    .main_Dona{
+        .div_mainDona{
+            .div_DonaQR{
+                .main_imagesDona{
+                    width: 25%;
+                    justify-self: flex-end;
+                    margin-left: 7%;
+                }
+                #Dona1{
+                    display: flex;
+                    width: 20%;
+                    margin-right: 7%;
+                }
+            }
+        }
     }
+}

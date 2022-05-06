@@ -101,13 +101,65 @@ main .main_ul {
   background-position: center; }
 
 /* Estilos del main de la hoja Impacto */
-.main_impacto {
-  background-color: #E5E5E5; }
-  .main_impacto .main_liImpacto {
-    box-shadow: 2.5px 3px #a0a0a0; }
+.grid_impacto {
+  display: grid;
+  background-color: #E5E5E5;
+  grid-template-columns: 90%;
+  grid-template-rows: repeat(6, 200px);
+  grid-auto-flow: row;
+  border: 2px black; }
+  .grid_impacto .main_liImpacto {
+    box-shadow: 2.5px 3px #a0a0a0;
+    border: solid #22223B 2px;
+    place-self: stretch; }
+    .grid_impacto .main_liImpacto .p_LiImpacto {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+
+/* Estilos del main de la hoja Dona */
+.main_Dona {
+  background-image: url(../imagenes/imagen8.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+  .main_Dona .div_mainDona {
+    display: block; }
+    .main_Dona .div_mainDona .main_liDona {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 80%;
+      height: 30px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: black;
+      background-color: rgba(255, 255, 255, 0.428);
+      font-size: 0.8rem;
+      margin: 2%;
+      text-align: center; }
+    .main_Dona .div_mainDona .div_DonaQR {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 40px;
+      flex-wrap: nowrap; }
+      .main_Dona .div_mainDona .div_DonaQR .main_h3Dona {
+        text-align: center;
+        font-size: 1rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+      .main_Dona .div_mainDona .div_DonaQR .main_imagesDona {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%; }
+
+#Dona1 {
+  display: none; }
 
 @media only screen and (min-width: 401px) {
-  /* Estilos del main general: aplican a todas las hojas*/
+  /* Estilos del main general Desktop: aplican a todas las hojas DESKTOP*/
   main .main_h2, main .main_h3 {
     font-size: 1.6rem; }
     main .main_h2:hover, main .main_h3:hover {
@@ -121,20 +173,28 @@ main .main_ul {
   main .main_p {
     font-size: 1rem; }
     main .main_p:hover {
-      font-size: 1.2rem;
       background-color: rgba(0, 0, 0, 0.273); }
   main .main_ul .main_li {
     font-size: 1rem;
     width: 40%; }
     main .main_ul .main_li:hover {
       background-color: white;
-      transform: scale(1.2); }
+      transform: scale(1.05); }
     main .main_ul .main_li .main_h4 {
       font-size: 1.2rem; }
-  /* Estilos del main de la hoja Index */
+  /* Estilos del main de la hoja Index DESKTOP */
   .main_home {
     background-size: 100%;
-    background-repeat: repeat-y; } }
+    background-repeat: repeat-y; }
+  /* Estilos del main de la hoja Dona DESKTOP */
+  .main_Dona .div_mainDona .div_DonaQR .main_imagesDona {
+    width: 25%;
+    justify-self: flex-end;
+    margin-left: 7%; }
+  .main_Dona .div_mainDona .div_DonaQR #Dona1 {
+    display: flex;
+    width: 20%;
+    margin-right: 7%; } }
 
 /* Estilos del footer */
 footer {
