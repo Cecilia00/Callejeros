@@ -66,20 +66,24 @@ main{
 /* Estilos del main de la hoja Impacto */
 .grid_impacto{
     display: grid;
-    background-color: $color-2;
-    grid-template-columns: 90%;
-    grid-template-rows: repeat(6, 200px);
+    grid-template-columns: 80%;
+    grid-template-rows: auto;
     grid-auto-flow: row;
-    border: 2px black;
+    border: 2px $color-4;
+    margin-bottom: 80px;
+    justify-content: center;
+    padding-left: 0px;
+    row-gap: 1%;
     .main_liImpacto{
-        box-shadow: 2.5px 3px #a0a0a0;
         border: solid $color-1 2px;
-        place-self: stretch ;
-
-        .p_LiImpacto{
         @include centerContent;
-        }
+        text-align: center;
+        border-radius: 15px;
+        border-color: $color-1;
+        padding: 3% 10%;
+        background-color: $color-2;
     }
+
 
 }
 /* Estilos del main de la hoja Dona */
@@ -123,9 +127,41 @@ main{
         }
     }
 }
+
 #Dona1{
     display: none;
 }
+
+
+/* Estilos del main de la hoja Voluntarios */
+main{
+    .labelForm{
+        font-size: 1rem;
+    }
+
+    .labelFormTitle{
+        @extend .labelForm;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+#Btn_Submit_Form_Voluntarios{
+    margin: 20px;
+    margin-bottom: 60px;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: $color-4;
+    background-color: white;
+    color: $color-4;
+    &:hover{
+        background-color: $color-4;
+        color: white;
+    }
+}
+
+
+
 
 @media only screen and (min-width:401px){
 
@@ -179,6 +215,18 @@ main{
          background-repeat: repeat-y;
      }
     
+    /* Estilos del main de la hoja Impacto */
+    .grid_impacto{
+        grid-template-columns: repeat(3,25%);
+        grid-template-rows: repeat(2, 180px);
+        row-gap: 2%;
+        column-gap: 2%;
+        .main_liImpacto{
+            border: solid $color-1 2px;
+            @include centerContent;
+            text-align: center;
+            overflow: hidden;
+        }
 
     /* Estilos del main de la hoja Dona DESKTOP */
     .main_Dona{
@@ -197,4 +245,14 @@ main{
             }
         }
     }
+
+    /* Estilos del main de la hoja Voluntarios DESKTOP*/
+    #Btn_Submit_Form_Voluntarios{
+        &:hover{
+            background-color: $color-4;
+            color: white;
+        }
+    }
+
+}
 }

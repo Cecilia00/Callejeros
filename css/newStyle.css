@@ -103,19 +103,24 @@ main .main_ul {
 /* Estilos del main de la hoja Impacto */
 .grid_impacto {
   display: grid;
-  background-color: #E5E5E5;
-  grid-template-columns: 90%;
-  grid-template-rows: repeat(6, 200px);
+  grid-template-columns: 80%;
+  grid-template-rows: auto;
   grid-auto-flow: row;
-  border: 2px black; }
+  border: 2px #FCA311;
+  margin-bottom: 80px;
+  justify-content: center;
+  padding-left: 0px;
+  row-gap: 1%; }
   .grid_impacto .main_liImpacto {
-    box-shadow: 2.5px 3px #a0a0a0;
     border: solid #22223B 2px;
-    place-self: stretch; }
-    .grid_impacto .main_liImpacto .p_LiImpacto {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    border-color: #22223B;
+    padding: 3% 10%;
+    background-color: #E5E5E5; }
 
 /* Estilos del main de la hoja Dona */
 .main_Dona {
@@ -158,6 +163,26 @@ main .main_ul {
 #Dona1 {
   display: none; }
 
+/* Estilos del main de la hoja Voluntarios */
+main .labelForm, main .labelFormTitle {
+  font-size: 1rem; }
+
+main .labelFormTitle {
+  font-weight: bold;
+  text-align: center; }
+
+#Btn_Submit_Form_Voluntarios {
+  margin: 20px;
+  margin-bottom: 60px;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #FCA311;
+  background-color: white;
+  color: #FCA311; }
+  #Btn_Submit_Form_Voluntarios:hover {
+    background-color: #FCA311;
+    color: white; }
+
 @media only screen and (min-width: 401px) {
   /* Estilos del main general Desktop: aplican a todas las hojas DESKTOP*/
   main .main_h2, main .main_h3 {
@@ -186,15 +211,32 @@ main .main_ul {
   .main_home {
     background-size: 100%;
     background-repeat: repeat-y; }
-  /* Estilos del main de la hoja Dona DESKTOP */
-  .main_Dona .div_mainDona .div_DonaQR .main_imagesDona {
-    width: 25%;
-    justify-self: flex-end;
-    margin-left: 7%; }
-  .main_Dona .div_mainDona .div_DonaQR #Dona1 {
-    display: flex;
-    width: 20%;
-    margin-right: 7%; } }
+  /* Estilos del main de la hoja Impacto */
+  .grid_impacto {
+    grid-template-columns: repeat(3, 25%);
+    grid-template-rows: repeat(2, 180px);
+    row-gap: 2%;
+    column-gap: 2%;
+    /* Estilos del main de la hoja Dona DESKTOP */
+    /* Estilos del main de la hoja Voluntarios DESKTOP*/ }
+    .grid_impacto .main_liImpacto {
+      border: solid #22223B 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden; }
+    .grid_impacto .main_Dona .div_mainDona .div_DonaQR .main_imagesDona {
+      width: 25%;
+      justify-self: flex-end;
+      margin-left: 7%; }
+    .grid_impacto .main_Dona .div_mainDona .div_DonaQR #Dona1 {
+      display: flex;
+      width: 20%;
+      margin-right: 7%; }
+    .grid_impacto #Btn_Submit_Form_Voluntarios:hover {
+      background-color: #FCA311;
+      color: white; } }
 
 /* Estilos del footer */
 footer {
