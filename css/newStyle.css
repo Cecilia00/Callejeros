@@ -116,7 +116,14 @@ main .main_ul {
   border-radius: 15px;
   text-align: center; }
 
-/* Estilos del main de la hoja Impacto */
+/* Estilos del main de la hoja Historia */
+#carouselExampleIndicators, .main_paragraphHistoria {
+  margin: 60px; }
+
+.main_paragraphHistoria {
+  text-align: center; }
+
+/* Estilos del main de la hoja Impacto*/
 .grid_impacto {
   display: grid;
   grid-template-columns: 80%;
