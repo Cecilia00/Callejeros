@@ -56,13 +56,34 @@ main{
 }
 
 /* Estilos del main de la hoja Index */
-.main_home{
+
+    .main_home{
+        
+        background-image: url(../imagenes/imagen11.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+
+        }
+            .main_ul{
+        
+                .main_liIndex { 
+                    @include centerContent;
+                    align-content: center;
+                    flex-wrap: wrap;
+                    width:$ancho;
+                    height:$alto;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+                    color: black;
+                    background-color: rgba(255, 255, 255, 0.819);
+                    font-size: 0.8rem;
+                    margin: 5%;
+                    border-radius: 15px;
+                    text-align: center;
+                }
+            }
+
     
-    background-image: url(../imagenes/imagen11.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    }
 /* Estilos del main de la hoja Impacto */
 .grid_impacto{
     display: grid;

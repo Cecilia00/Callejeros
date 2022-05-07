@@ -100,6 +100,22 @@ main .main_ul {
   background-attachment: fixed;
   background-position: center; }
 
+.main_ul .main_liIndex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 330px;
+  height: 110px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.819);
+  font-size: 0.8rem;
+  margin: 5%;
+  border-radius: 15px;
+  text-align: center; }
+
 /* Estilos del main de la hoja Impacto */
 .grid_impacto {
   display: grid;
