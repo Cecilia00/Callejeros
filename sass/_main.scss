@@ -84,12 +84,12 @@ main{
             }
 
 /* Estilos del main de la hoja Historia */
-#carouselExampleIndicators{
+#carouselIndicators{
     margin: 60px;
 }
 
 .main_paragraphHistoria{
-    @extend #carouselExampleIndicators;
+    @extend #carouselIndicators;
     text-align: center;
 }
 
