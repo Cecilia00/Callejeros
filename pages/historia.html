@@ -27,34 +27,28 @@
 
     <body>
 
-    <!-- Header -->
+     <!-- Header -->
         <header>
-            <img class="logo" src="../imagenes/imagen5.png" alt="Logo, caricatura de perro con lentes">
+            <a class="a_logo" href="../index.html"> <img class="logo" src="../imagenes/imagen5.png" alt="Logo, caricatura de perro con lentes"></a>
             <h1 class="header_h1">Más compañeros, menos callejeros</h1>
-            <button class="burgerBtn"><i class="fa-solid fa-bars"></i>"></i></button>
             <div class="headerNav">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                    <div class="container-fluid d-flex justify-content-around">
-                        <ul class="list-group list-group-horizontal-sm">
-                            <li class="list-group-item"><a href="../index.html"
-                                    class="link-dark text-decoration-none">Nosotros</a></li>
-                            <li class="list-group-item"><a href="historia.html"
-                                    class="link-dark text-decoration-none">Nuestra
-                                    historia</a></li>
-                            <li class="list-group-item"><a href="impacto.html"
-                                    class="link-dark text-decoration-none">Nuestro
-                                    impacto</a></li>
-                            <li class="list-group-item li-color1"><a href="dona.html"
-                                    class="link-dark text-decoration-none">Dona</a></li>
-                            <li class="list-group-item li-color2"><a href="voluntario.html"
-                                    class="link-dark text-decoration-none">Se voluntario</a></li>
-                        </ul>
-                    </div>
+                <nav class="navbar-expand-lg navbar-light bg-white">
+                    <label class="hamburger_label" for="hamburger">&#9776;</label>
+                    <input type="checkbox" name="" id="hamburger">
+                        <div class="container nav-container container-fluid d-flex justify-content-around">
+                            <div class="menu-items">
+                                <ul class="list-group list-group-horizontal-sm">
+                                    <li class="list-group-item"><a href="../index.html" class="list-a link-dark text-decoration-none">Nosotros</a></li>
+                                    <li class="list-group-item"><a href="historia.html" class="list-a link-dark text-decoration-none">Nuestra historia</a></li>
+                                    <li class="list-group-item"><a href="impacto.html"class="list-a link-dark text-decoration-none">Nuestro impacto</a></li>
+                                    <li class="list-group-item li-color1"><a href="dona.html" class="list-a link-dark text-decoration-none">Dona</a></li>
+                                    <li class="list-group-item li-color2"><a href="voluntario.html" class="list-a link-dark text-decoration-none">Se voluntario</a></li>
+                                </ul>
+                            </div>
+                        </div>
                 </nav>
-            </div>
         </header>
-
-    <!-- Main -->
+        <!-- Main -->
         <main class="main_containerHistoria">
             <h2 id="Historia1" class="main_h2">Nuestra historia</h2>
             <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
@@ -93,7 +87,7 @@
 
                 De su cuerpo salía un olor realmente fuerte, impregnaba todo a su alrededor. En su cuerpo, en sus ojos se podía ver el dolor. Se veía cansado, agotado, golpeado por la vida.
         </main>
-    <!-- Footer  -->
+        <!-- Footer  -->
         <footer class="fixed-bottom">
             <h5 class="footer_h5">Más compañeros, menos callejeros</h5>
             <a href="mailto:mcmc@gmail.com"> <i class="fa-solid fa-envelope"></i></a>

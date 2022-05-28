@@ -2,48 +2,108 @@
 header{
     background-color: $color-1;
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
-    flex-wrap: wrap;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 
-    .logo{
-        width: 25%;
-        align-self: center;
+    .a_logo{
+        display: inline-block;
+        max-width: 100px;
+        .logo{
+            display: inline-block;
+            width: 80%;
+            align-self: center;
+            margin: 3px;
+    }
+    
     }
     .header_h1{
+        display: inline-block;
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
         color: white;
-        width: 75% ;
-        font-size: 1.5rem;
+        width: 65%;
+        font-size: 1.1rem;
         padding-left: 10%;
-        padding-right: 5%;
+        padding-right: 10%;
         align-self: center;
+        text-align: center;
+        margin: auto;
     }
-    .burgerBtn{
-        display: none;
-    }
+    /* MENU BURGER MOBILE */
     .headerNav{
+        display: flex;
+        margin-right: 0px;
         width: 100%;
-        .li-color1{
-            background-color:$color-3;
-        }
-        .li-color2{
-            background-color:$color-4;
-        }
-        
-    }
 
+
+        #hamburger{
+            display: none;
+        }
+        .hamburger_label{
+            display: inline-block;
+            color:$color-1;
+            font-size: 1.7rem;
+            padding: 10px;
+            @media only screen and (min-width:401px){
+                display: none;
+            }
+
+
+        }
+        .menu-items{
+            width: 100%;
+            display: none;
+            position: absolute;
+            max-width: 150px;
+            right: 5px;
+            top: 60px;
+
+            .li-color1{
+                background-color:$color-3;
+            }
+            .li-color2{
+                background-color:$color-4;
+            }
+            @media only screen and (min-width:401px){
+                display: flex;
+                position: relative;
+                max-width: 0px;
+                top:0px;
+                width: 100%;
+            }
+
+
+        }
+
+        input:checked{
+            + div .menu-items{
+                display: block;
+            }
+          }
+
+    }
 }
 @media only screen and (min-width:401px){
 
     /* Estilos del header */
     header{
-        
-        .logo{
-            width: 7%;
-        }
+
         .header_h1{
-            font-size: 2rem;
+            font-size: 1.5rem;
+            margin:0px;
+            padding: 0px;
+            max-width: 400px;
         }
 
     }
-}
+
+    /* MENU BURGER DESKTOP */
+    .hamburger_label{
+        display: none;
+    }
+
+}   
+
+

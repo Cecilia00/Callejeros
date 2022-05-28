@@ -2,15 +2,17 @@
 main{
     .main_h2{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        color: white;
-        background-color: rgba(106, 105, 104, 0.273);
+        color: $color-4;
+        background-color: rgba(215, 193, 255, 0.495);
         font-size: 1.2rem;
         padding: 3%;
         text-align: center;
+        margin: 0px;
 
     }
     .main_h3{
         @extend .main_h2;
+        background-color: rgba(255, 255, 255, 0.758);
         font-size: 1rem;
     }
 
@@ -42,6 +44,7 @@ main{
             margin: 5%;
             border-radius: 15px;
             text-align: center;
+            padding: 3%;
 
         
             .main_h4{
@@ -56,18 +59,25 @@ main{
 }
 
 /* Estilos del main de la hoja Index */
-
+    .main_h2Index{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+        color: $color-4;
+        background-color: rgba(215, 193, 255, 0.495);
+        font-size: 1.2 rem;
+        padding: 1%;
+        text-align: center;
+        margin: 0px;
+    }
     .main_home{
         
         background-image: url(../imagenes/imagen11.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center;
+        background-position: center 60px;
 
-        }
-            .main_ul{
+        .main_ul{
         
-                .main_liIndex { 
+            .main_liIndex { 
                     @include centerContent;
                     align-content: center;
                     flex-wrap: wrap;
@@ -80,42 +90,69 @@ main{
                     margin: 5%;
                     border-radius: 15px;
                     text-align: center;
+                    padding: 0% 3%;
                 }
-            }
-
+        }
+        }
 /* Estilos del main de la hoja Historia */
-#carouselIndicators{
-    margin: 60px;
-}
-
-.main_paragraphHistoria{
-    @extend #carouselIndicators;
-    text-align: center;
-}
-
-/* Estilos del main de la hoja Impacto*/
-
-.grid_impacto{
-    display: grid;
-    grid-template-columns: 80%;
-    grid-template-rows: auto;
-    grid-auto-flow: row;
-    border: 2px $color-4;
-    margin-bottom: 80px;
-    justify-content: center;
-    padding-left: 0px;
-    row-gap: 1%;
-    .main_liImpacto{
-        border: solid $color-1 2px;
-        @include centerContent;
-        text-align: center;
-        border-radius: 15px;
-        border-color: $color-1;
-        padding: 3% 10%;
-        background-color: $color-2;
+.main_containerHistoria{
+    margin-bottom: 60px;
+    #carouselIndicators{
+        margin: 7%;
+        z-index: 1;
     }
 
+    .main_paragraphHistoria{
+        @extend #carouselIndicators;
+        text-align: center;
+    }
+}
+/* Estilos del main de la hoja Impacto*/
 
+.main_impacto{
+    margin-bottom: 55px;
+    .imagenImpacto{
+        width: 90%;
+        justify-content: center;
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        right:5%;
+        left: 5%;
+        top:35%;
+    }
+    .grid_impacto{
+        display: grid;
+        height: auto;
+        grid-template-columns: 80%;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        border-bottom: 2px $color-4;
+        justify-content: center;
+        padding-left: 0px;
+        z-index: 2;
+        row-gap: 2%;
+        margin: 30px 0px 100px 0px;
+        
+        .main_liImpacto{
+            @include centerContent;
+            border: solid 2px $color-4;
+            border-radius: 15px;
+            box-shadow: rgba(21, 21, 21, 0.48);
+            text-align: center;
+            border-color: $color-1;
+            padding: 3% 10%;
+            background-color: rgba(240, 226, 211, 0.408);
+            z-index: 1;
+            min-height: 100px;
+            overflow: hidden;
+
+            &:hover{
+                background-color: $color-1;
+                color: rgb(255, 255, 255);
+            }
+        }
+    } 
 }
 
 /* Estilos del main de la hoja Dona */
@@ -123,7 +160,8 @@ main{
     background-image: url(../imagenes/imagen8.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center 65%;
+    top:60%; 
     .div_mainDona{
        display: block;
 
@@ -166,7 +204,18 @@ main{
 
 
 /* Estilos del main de la hoja Voluntarios */
-main{
+#imagenVoluntario1{
+    display: none;
+}
+#imagenVoluntario2{
+    display: none;
+}
+
+.formularioVoluntario{
+    width: 80%;
+    margin: 10%;
+    z-index: 2;
+
     .labelForm{
         font-size: 1rem;
     }
@@ -180,7 +229,6 @@ main{
 
 #Btn_Submit_Form_Voluntarios{
     margin: 20px;
-    margin-bottom: 60px;
     padding: 5px;
     border-radius: 5px;
     border-color: $color-4;
@@ -201,27 +249,25 @@ main{
     /* Estilos del main general Desktop: aplican a todas las hojas DESKTOP*/
      main{
          .main_h2{
+             padding: 12px;
              font-size: 1.6rem;
              &:hover{
-                 background-color:rgba(0, 0, 0, 0.273) ;
+                 background-color:rgb(250, 248, 248) ;
              }
  
          }
          .main_h3{
-             font-size: 1.4rem;
-             &:hover{
-                 background-color:rgba(0, 0, 0, 0.273) ;
-             }
+            padding: 12px;
+            font-size: 1.4rem;
          }
          .main_h4{
-             font-size: 1.2rem;
+            padding: 12px;
+            font-size: 1.2rem;
  
          }
          .main_p{
-             font-size: 1rem;
-             &:hover{
-                 background-color:rgba(0, 0, 0, 0.273) ;
-             }
+            padding: 12px;
+            font-size: 1rem;
          }
          .main_ul{
              
@@ -245,20 +291,42 @@ main{
     .main_home{
          background-size: 100%;
          background-repeat: repeat-y;
-     }
-    
-    /* Estilos del main de la hoja Impacto DESKTOP */
-    .grid_impacto{
-        grid-template-columns: repeat(3,25%);
-        grid-template-rows: repeat(2, 180px);
-        row-gap: 2%;
-        column-gap: 2%;
-        .main_liImpacto{
-            border: solid $color-1 2px;
-            @include centerContent;
-            text-align: center;
-            overflow: hidden;
+         .main_home_textbox{
+            width: 70%;
+            align-self: center;
+            margin: auto;
         }
+
+         .main_liIndex {
+             margin:1%;
+         }
+     }
+    /* Estilos del main de la hoja Historia DESKTOP */
+     #carouselIndicators{
+         margin: 3% 15%;
+     }
+    /* Estilos del main de la hoja Impacto DESKTOP */
+    .main_impacto{
+        margin-bottom: 55px;
+
+        .imagenImpacto{
+            width: 40%;
+            left: 50%
+        }
+        .grid_impacto{
+            grid-template-columns: repeat(3,25%);
+            grid-template-rows: repeat(2, 180px);
+            row-gap: 3%;
+            column-gap: 3%;
+
+            .main_liImpacto{
+                // border-bottom: solid $color-1 2px;
+                @include centerContent;
+                text-align: center;
+                overflow: hidden;
+            }
+        }
+    }
 
     /* Estilos del main de la hoja Dona DESKTOP */
     .main_Dona{
@@ -279,12 +347,31 @@ main{
     }
 
     /* Estilos del main de la hoja Voluntarios DESKTOP*/
+    #imagenVoluntario1{
+        width: 20%;
+        justify-content: center;
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        left: 2%;
+        top:35%;
+    }
+    #imagenVoluntario2{
+        width: 20%;
+        justify-content: center;
+        display: flex;
+        position: fixed;
+        z-index: 1;
+        left: 80%;
+        top:55%;
+    }
+    .formularioVoluntario{
+        margin: 3% 10%;
+    }    
     #Btn_Submit_Form_Voluntarios{
         &:hover{
             background-color: $color-4;
             color: white;
         }
     }
-
-}
 }
