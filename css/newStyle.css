@@ -64,6 +64,9 @@ header {
         width: 100%; } }
   header .headerNav input:checked + div .menu-items {
     display: block; }
+  @media only screen and (min-width: 401px) {
+    header .headerNav {
+      display: block; } }
 
 @media only screen and (min-width: 401px) {
   /* Estilos del header */
@@ -74,9 +77,30 @@ header {
       margin: 0px;
       padding: 0px;
       max-width: 400px; }
+    header .headerNav {
+      position: absolute;
+      top: 88px; }
   /* MENU BURGER DESKTOP */
-  .hamburger_label {
-    display: none; } }
+  .headerNav {
+    display: block; }
+    .headerNav .hamburger_label {
+      display: none; } }
+
+.header-container {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  z-index: 5;
+  background-color: white; }
+
+.header-spacer {
+  height: 70px;
+  min-height: 70px;
+  width: 100%;
+  z-index: 3; }
+  @media only screen and (max-width: 401px) {
+    .header-spacer {
+      display: none; } }
 
 /* Estilos del main general: aplican a todas las hojas*/
 main .main_h2, main .main_h3 {

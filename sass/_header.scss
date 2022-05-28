@@ -77,13 +77,16 @@ header{
                 display: block;
             }
           }
-
+    @media only screen and (min-width:401px){
+        display: block;
+    }
     }
 }
 @media only screen and (min-width:401px){
 
     /* Estilos del header */
     header{
+
         flex-wrap: wrap;
         .header_h1{
             font-size: 1.5rem;
@@ -91,14 +94,43 @@ header{
             padding: 0px;
             max-width: 400px;
         }
+        .headerNav {
+            position: absolute;
+            top: 88px;
+            
+        }
 
     }
 
     /* MENU BURGER DESKTOP */
-    .hamburger_label{
-        display: none;
+
+    .headerNav{
+        display: block;
+        
+        .hamburger_label{
+            display: none;
+        }
     }
 
 }   
+
+.header-container {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 5;
+    background-color: white;
+
+}
+
+.header-spacer {
+    height: 70px;
+    min-height: 70px;
+    width: 100%;
+    z-index: 3;
+    @media only screen and (max-width:401px){
+        display:none;
+    }
+}
 
 
