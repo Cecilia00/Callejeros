@@ -33,11 +33,6 @@ header{
     }
     /* MENU BURGER MOBILE */
     .headerNav{
-        display: flex;
-        margin-right: 0px;
-        width: 100%;
-
-
         #hamburger{
             display: none;
         }
@@ -89,7 +84,7 @@ header{
 
     /* Estilos del header */
     header{
-
+        flex-wrap: wrap;
         .header_h1{
             font-size: 1.5rem;
             margin:0px;

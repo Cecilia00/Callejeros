@@ -1,12 +1,3 @@
-.btn_mail {
-  color: white; }
-
-.btn_facebook {
-  color: blue; }
-
-.btn_instagram {
-  color: purple; }
-
 /* Variables de colores */
 /* Variables de operaciones */
 * {
@@ -18,7 +9,7 @@
 header {
   background-color: #22223B;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   position: sticky;
   top: 0px;
@@ -43,47 +34,46 @@ header {
     align-self: center;
     text-align: center;
     margin: auto; }
-  header .headerNav {
-    display: flex;
-    margin-right: 0px;
-    width: 100%; }
-    header .headerNav #hamburger {
-      display: none; }
-    header .headerNav .hamburger_label {
-      display: inline-block;
-      color: #22223B;
-      font-size: 1.7rem;
-      padding: 10px; }
-      @media only screen and (min-width: 401px) {
-        header .headerNav .hamburger_label {
-          display: none; } }
-    header .headerNav .menu-items {
-      width: 100%;
-      display: none;
-      position: absolute;
-      max-width: 150px;
-      right: 5px;
-      top: 60px; }
-      header .headerNav .menu-items .li-color1 {
-        background-color: #4A6C6F; }
-      header .headerNav .menu-items .li-color2 {
-        background-color: #FCA311; }
-      @media only screen and (min-width: 401px) {
-        header .headerNav .menu-items {
-          display: flex;
-          position: relative;
-          max-width: 0px;
-          top: 0px; } }
-    header .headerNav input:checked + div .menu-items {
-      display: block; }
+  header .headerNav #hamburger {
+    display: none; }
+  header .headerNav .hamburger_label {
+    display: inline-block;
+    color: #22223B;
+    font-size: 1.7rem;
+    padding: 10px; }
+    @media only screen and (min-width: 401px) {
+      header .headerNav .hamburger_label {
+        display: none; } }
+  header .headerNav .menu-items {
+    width: 100%;
+    display: none;
+    position: absolute;
+    max-width: 150px;
+    right: 5px;
+    top: 60px; }
+    header .headerNav .menu-items .li-color1 {
+      background-color: #4A6C6F; }
+    header .headerNav .menu-items .li-color2 {
+      background-color: #FCA311; }
+    @media only screen and (min-width: 401px) {
+      header .headerNav .menu-items {
+        display: flex;
+        position: relative;
+        max-width: 0px;
+        top: 0px;
+        width: 100%; } }
+  header .headerNav input:checked + div .menu-items {
+    display: block; }
 
 @media only screen and (min-width: 401px) {
   /* Estilos del header */
-  header .header_h1 {
-    font-size: 1.5rem;
-    margin: 0px;
-    padding: 0px;
-    max-width: 400px; }
+  header {
+    flex-wrap: wrap; }
+    header .header_h1 {
+      font-size: 1.5rem;
+      margin: 0px;
+      padding: 0px;
+      max-width: 400px; }
   /* MENU BURGER DESKTOP */
   .hamburger_label {
     display: none; } }
