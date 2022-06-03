@@ -69,7 +69,7 @@ header {
 /* Estilos del header Tablet*/
 @media all and (min-width: 401px) {
   header .header_h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     width: 70%; }
   header .headerNav {
     width: 100%; }
